@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --body-bg-color: 187 155 108;
+    --main-bg-color: 236 206 158;
+    --accent-color: 87 58 17;
+    --primary-txt-color: 0 0 0;
+    --secondary-txt-color: 255 255 255;
+  }
+
+  .red-squiggly-line {
+    text-decoration: underline wavy #F22727;
+  }
+}
